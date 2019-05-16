@@ -1,0 +1,29 @@
+// JavaScript Document
+<script>
+
+function center(x){
+	var f=0, e=x.length-1;
+	while((f+2)!=e){
+	if(x[f]>x[e])
+	{
+		x[e-1]=x[e-1]+x[e];
+		e--;
+		alert('first'+x[f]+' '+x[e]);
+	}
+	else
+	{
+	x[f+1]=x[f+1]+x[f];
+	f++;
+	alert('second'+x[e]+' '+x[f]);
+	}
+	}
+	
+	if(x[f]==x[e])
+	return f+1;
+	else return -1;
+	
+}
+
+
+
+</script>
